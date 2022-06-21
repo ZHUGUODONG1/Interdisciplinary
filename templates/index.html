@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>quartz classifier</title>
+  <link href="../static/css/main.css" rel="stylesheet" type="text/css"/>
+  <!-- <link href="./static/main.css" rel="stylesheet" type="text/css"/> -->
+</head>
+<body >
+<img src="https://www.cugb.edu.cn/r/cms/www/blue/images/logo-white-v-new.png">
+ <div class="login"  align="center">
+  <h1>Quartz forming environment prediction model optimized by PSO</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('result2')}}"method="post">
+        <fieldset>
+        <input type="number" name="Al(ppm)" placeholder="Al(ppm)" required="required" step="any"/>
+        <input type="number" name="Ti(ppm)" placeholder="Ti(ppm)" required="required" step="any"/>
+        <input type="number" name="Li(ppm)" placeholder="Li(ppm)" required="required" step="any"/>
+        <input type="number" name="Ge(ppm)" placeholder="Ge(ppm)" required="required" step="any"/>
+        <input type="number" name="Sr(ppm)" placeholder="Sr(ppm)" required="required" step="any"/>
+        <input type="submit" value="Predict" id="result">
+        </fieldset>
+    </form>
+     <fieldset>
+     <p>According to the element characteristics of Al, Ti, LI, Ge and Sr contained in the quartz data samples,
+     the parameters of the SVM-based quartz formation environment prediction model were optimized by PSO,
+     which improved the prediction effect of the quartz formation environment prediction model. There are nine
+     possible forming environments for quartz, and the nine forming environments are orogenic,
+         grisen, porphyry, granite, skarn, Carlin, IRG, pegmatite, and epithermal.</p>
+         <br>
+     </fieldset>
+     <fieldset>
+     <p>Please enter the corresponding element feature data in the corresponding input box</p>
+     <p>The relevant code of the project can be obtained by visiting
+         <a href="https://github.com/ZHUGUODONG1/Interdisciplinary.git">github</a></p>
+     </fieldset>
+   <br>
+   <br>
+   {{ prediction_text }}
+ </div >
+</body>
+</html>

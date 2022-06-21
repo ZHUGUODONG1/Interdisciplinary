@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<img src=https://www.cugb.edu.cn/r/cms/www/blue/images/logo-white-v-new.png>
+
+<div>
+<form action="{{ url_for('A')}}"method="post">
+    <input type="submit" value="Model1" id="result">
+
+</form>
+<form action="{{ url_for('B')}}"method="post">
+      <input type="submit" value="Model2" id="result2">
+</form>
+    <fieldset>
+    <p>Model1 is a deep learning based quartz forming environment prediction model</p>
+    <p>Model2 is a quartz forming environment prediction model optimized by PSO</p>
+    </fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+
+  background-color:slategray ;
+  text-align: center;
+
+}
+
+p{
+  color: white;
+  font: Shanti;
+  font-size: 1.2em ;
+  margin: 20px;
+
+}
+h1{
+  color: white;
+
+
+
+}
+img {
+  margin: 60px 0 30px 0;
+  width: 500px;
+
+}
+input {
+
+   width :200px;
+   height: 50px;
+   margin: 20px;
+   border: none;
+   border-radius: 10px;
+   font: Shanti;
+   text-align: center;
+   font-size: 1.3em;
+}
+
+#predict{
+  background-color:palevioletred ;
+  color: white;
+  width: 200px;
+}
+#result{
+  background-color:palevioletred ;
+  color: white;
+  width: 200px;
+}
+#result2{
+  background-color:palevioletred ;
+  color: white;
+  width: 200px;
+}
+#Quartz1{
+  background-color:palevioletred ;
+  color: white;
+  width: 200px;
+}
+#Quartz1{
+   background-color:mediumvioletred ;
+  cursor: pointer;
+}
+#Quartz2{
+  background-color:palevioletred ;
+  color: white;
+  width: 200px;
+}
+#Quartz2{
+   background-color:mediumvioletred ;
+  cursor: pointer;
+}
+#result{
+   background-color:mediumvioletred ;
+  cursor: pointer;
+}
+#result2{
+  background-color:mediumvioletred ;
+  cursor: pointer;
+
+}
+
+#predict{
+  background-color:mediumvioletred ;
+  cursor: pointer;
+
+
+}
